@@ -3,7 +3,7 @@ if (!isset($_SESSION)) {
 	session_start();
 }
 
-include_once("conn.php");
+include_once("utils/conn.php");
 ?>
 <!doctype html>
 <html lang="en">
@@ -45,7 +45,7 @@ include_once("conn.php");
 					?>
 						<ul class="navbar-nav ms-auto">
 							<li class="nav-item">
-								<a class="nav-link" href="Logout.php">Logout (<?php echo $_SESSION['username'] ?>)</a>
+								<a class="nav-link" href="logout.php">Logout (<?php echo $_SESSION['username'] ?>)</a>
 							</li>
 						</ul>
 					<?php
